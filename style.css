@@ -1,0 +1,420 @@
+*{
+    padding:0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    text-wrap: nowrap;
+}
+body,html{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.light{
+    --bg-color:#ffffff;
+    --text-color:#1a1a1a;
+    --card-bg:#f8f9fa;
+    .section-title{
+        color: #020202;
+    }
+}
+:root{
+    --bg-color:#121212;
+    --text-color:#f3f4f6;
+    --card-bg:#1f2937;
+    footer ul li a{
+        color:#ffffff;
+    }
+    .section-title{
+        color: #f3f4f6;
+    }
+}
+body{
+    transition: background-image 0.5s ease-in-out;
+    background-color:var(--bg-color);
+    color: var(--text-color);
+    transition:background-color 0.3s ease,color 0.3s ease;
+}
+header{
+    padding:1rem 6rem;
+    position: fixed;
+    top:1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    backdrop-filter:blur(8px);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3rem;
+    display: flex;
+    gap:5rem;
+    z-index:1000;
+}
+.logo{
+    color: white;
+    word-wrap: nowrap;
+    font-size: 1.4rem;
+    font-weight: 700;
+    transition:0.4s ease-in-out;
+}
+.logo:hover{
+    transform: scale(1.2);
+}
+.nav-links{
+    display: flex;
+    gap: 3rem;
+}
+li a{
+    position: relative;
+    color: white;
+    font-weight: 400;
+}
+li a::before{
+    position: absolute;
+    content:'';
+    width: 0;
+    left: 0;
+    height: 5px;
+    top: 25px;
+    border-radius: 1rem;
+    transition: 0.5s ease-in-out;
+    background: linear-gradient(to right, rgb(14, 122, 165), rgb(151, 6, 124));
+}
+li a:hover::before{
+    transform:scale(1.2);
+    width: 100%;
+}
+.visit-btn{
+padding:0.8rem 1.5rem;
+cursor:pointer;
+color:white;
+font-size: 1rem;
+font-weight: 600;
+border-radius: 4rem;
+border: none;
+ transition: 0.5s ease-in-out;
+    background: linear-gradient(to right, rgb(14, 122, 165), rgb(169, 6, 139));
+}
+.visit-btn:hover{
+     transform:scale(1.3);
+    background: linear-gradient(to right, rgb(160, 6, 150), rgb(15, 147, 213));
+}
+#Menu-icon{
+    font-size: 3rem;
+    display: block;
+    color: white;
+}
+section{
+    min-height: 100vh;
+    padding: 8rem 12%;
+    width:100%;
+    position: relative;
+}
+.header:hover{
+    box-shadow: 0 0 35px rgb(37, 4, 187),0 0 65px rgba(37, 4, 187, 0.6);
+}
+.about{
+    gap:50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about.about-container{
+    align-items: center;
+    justify-content:center;
+}
+.about img:hover{
+    cursor: pointer;
+    background: url("https://freedesignfile.com/upload/2016/11/Blue-Light-Wave-Backgrounds-HD-picture-021-280x235.jpg");
+}
+.about img{
+    display: flex;
+    width: 30vw;
+    border-radius: 50%;
+    padding:3rem;
+}
+.info{
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap:2.5rem;
+}
+.info h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
+.info span{
+     background: linear-gradient(to right, rgb(18, 107, 143), rgb(136, 7, 112));
+     color:transparent;
+     background-clip: text;
+     font-size: 2rem;
+}
+.btn-group{
+    display: flex;
+    gap:6rem;
+}
+.btn{
+    border-radius: 2rem;
+    padding:0.5rem 2.2rem;
+    border:2px solid black;
+    cursor:pointer;
+    font-weight: 600;
+    text-wrap: nowrap;
+    transition:0.4s ease-in-out
+}
+.btn:hover{
+    transform: scale(1.4);
+    border:2px solid white;
+    background-color: black;
+    color:white;
+}
+.social{
+    padding:5px 7px;
+}
+.social i{
+    margin-left: 55px;
+    font-size: 2.7rem;
+    cursor:pointer;
+    transition:0.4s ease-in out;
+}
+.social i:hover{
+    transform: scale(1.8);
+}
+.section-title{
+text-align:center;
+font-size: 5rem;
+font-weight: 700;
+margin-bottom:4rem ;
+}
+.Experience-info{
+    display:flex;
+    text-align:center ;
+    justify-content: center;
+    gap:5rem;
+}
+.Experience img{
+    width:45vw;
+    border-radius: 3rem;
+}
+.grid{
+    margin-left: 10px;
+display:grid;
+grid-template-columns: repeat(2,1fr);
+gap:2rem;
+}
+.grid-card{
+    font-size:1.5rem;
+    margin-bottom:1rem;
+    border:2px solid black;
+    border-radius:5rem;
+    padding:3rem;
+    display:flex;
+    flex-direction:column;
+    align-items: baseline;
+    justify-content:left;
+    cursor:pointer;
+    transition:0.4s ease-in-out;
+}
+.grid-card:hover{
+    transform:scale(1.4);
+     background:url("https://image.made-in-china.com/2f0j00BvYiKsbFLEkV/Side-Emitting-Fiber-Optic-Star-Lighting.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     border:2px solid rgba(128,128,128,0.6);
+     box-shadow: 0 0 35px rgb(25, 4, 252),0 0 65px rgba(29, 18, 250, 0.6);
+    color:white;
+}
+.grid-card i{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.grid-card span{
+    font-size:1.5rem;
+    font-weight: 600;
+      background: linear-gradient(to right, rgb(15, 128, 173), rgb(171, 7, 141));
+     color:transparent;
+     background-clip: text;
+}
+::-webkit-scrollbar{
+    width:20px;
+}
+::-webkit-scrollbar-track{
+background-color: grey;
+}
+::-webkit-scrollbar-thumb{
+          background: linear-gradient(to right, rgb(18, 107, 143), rgb(136, 7, 112));
+
+}
+.section-title{
+    margin-left:290px;
+    text-align: center;
+    margin-top:4rem;
+    font-size: 69px;
+    font-weight: 600;
+    color: black;
+}
+.projects-info{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap:3rem;
+}
+.projy{
+padding:3rem 2.5rem;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content: center;
+text-align:center;
+gap:1.5rem;
+border: 2px solid black;
+border-radius:3rem;
+cursor:pointer;
+transition:0.5s ease-in-out;
+}
+.projy:hover{
+    background:url("https://cdn.vectorstock.com/i/500p/17/25/abstract-background-with-colored-lines-and-light-vector-1641725.jpg");
+    color:white;
+    transform:translateX(-15px)scale(1.25);
+}
+.projy img{
+    width:28vw;
+    height: 44vh;
+}
+.projy:hover .btn{
+    border:2px solid white;
+    color:white;
+}
+.projy:hover .btn:hover{
+    border:2px solid white;
+    background-color:white;
+    color:black
+}
+.projy h3{
+    font-size:2rem;
+    font-weight:600;
+}
+.input-box{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap:2rem;
+    margin-top:5rem;
+}
+.input-box input{
+    border-radius: 2rem;
+    border:2px solid black;
+    padding:2rem 8rem;
+    font-size: 2.5rem;;
+}
+.input-box input::placeholder{
+    font-size: 3rem;
+}
+.input{
+    text-transform: uppercase;
+    position:relative;
+}
+.input i{
+    color: #121212;
+    position: absolute;
+    font-size: 4rem;
+    left:10px;
+    top:50%;
+    transform: translate(50%,-50%);
+}
+#modify input{
+    text-transform: uppercase;
+}
+footer{
+    bottom:0;
+    left:0;
+    height:10rem;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    gap:4rem;
+    align-items: center;
+    justify-content: center;
+}
+footer ul{
+    display:flex;
+    align-items: center;
+    gap:4rem;
+}
+footer ul li a{
+    color:black;
+    font-weight: 600;
+}
+.copyright{
+    font-size: 300;
+    font-weight: 500;
+}
+#success-page{
+    padding: 16px 36px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.skills-info{
+    align-items: center;
+    justify-content: center;
+}
+.card-box{
+    align-items: center;
+    justify-content: center;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+}
+.card{
+    border-radius: 1rem;
+    padding:4px 3px 5px;
+    border:2px solid white;
+    margin-left: 100px;
+    width:25vw;
+    height: 44vh;
+    margin-top: 14px;
+}
+.card img{
+    border-radius: 2.3rem;
+    width:25vw;
+    height: 34vh;
+}
+.card main{
+    display: flex;
+    flex-direction: column;
+}
+#C:hover{
+ box-shadow: 0 0 65px rgb(25, 4, 252),0 0 75px rgba(29, 18, 250, 0.6);
+}
+#J:hover{
+ box-shadow: 0 0 65px rgb(250, 250, 254),0 0 75px rgba(218, 218, 220, 0.6);
+}
+#JS:hover{
+ box-shadow: 0 0 75px rgb(249, 249, 11),0 0 75px rgba(245, 252, 47, 0.6);
+}
+#H:hover{
+ box-shadow: 0 0 65px rgb(252, 78, 4),0 0 95px rgba(247, 94, 17, 0.6);
+}
+#CsS:hover{
+ box-shadow: 0 0 65px rgb(4, 157, 252),0 0 75px rgba(18, 153, 250, 0.6);
+}
+#S:hover{
+ box-shadow: 0 0 65px rgb(7, 143, 23),0 0 75px rgba(18, 250, 37, 0.6);
+}
+.card:hover{
+    background: url("https://cdn.vectorstock.com/i/500p/12/68/abstract-blue-wavy-with-light-curved-lines-vector-21091268.jpg");
+}
+@media(max-width:768px){
+    .Experience,.projects,.about,.skills,.grid,.info,.projects-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

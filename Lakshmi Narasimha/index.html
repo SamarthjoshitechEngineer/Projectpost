@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <i class='bx bxs-map'></i>
+            <input type="text" placeholder="Enter your location" required>
+            <button class="bx bx-search"></button> 
+          </div>
+          <div class="weather-box">
+            <div class="box">
+                <div class="info-weather">
+                    <div class="Weather">
+                        <img src="https://media.istockphoto.com/id/1466265985/vector/sun-in-clouds-3d-sunny-weather-elements-white-bubble-cloud-on-sky-summer-spring-hot-seasonal.jpg?s=170667a&w=0&k=20&c=fAWZu5reaQs4JUGC67sVhZUU_c1_-WRZ_SGi9EPOkgU=">
+                        <p class="temperature">0<span>Celcius</span></p>
+                        <p class="description">Broken clouds</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="weather-details">
+            <div class="humidity">
+                <i class="bx bx-water"></i>
+                <div class="text">
+                    <div class="info-humidity">
+                        <span>0%</span>
+                    </div>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="wind">
+                <i class="bx bx-wind"></i>
+                <div class="text">
+                    <div class="info-wind">
+                        <span>0 km/hr</span>
+                    </div>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+            <div class="not-found">
+                <div class="box">
+                    <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/404-error-template-3.png">
+                    <p> Oops! Location not Found!</p>
+                </div>
+          </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
